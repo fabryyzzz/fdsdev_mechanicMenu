@@ -5,56 +5,6 @@ local comandomodifica = false
 local prezzofinale = 0
 local lastJob
 local myCar = {}
-local autoPolizia = {
-    [GetHashKey('panto')] = true, 
-	[GetHashKey('polbus')] = true,                     
-	[GetHashKey('polescalade')] = true,
-	[GetHashKey('ucfugitive')] = true,
-	[GetHashKey('ucballer')] = true, 
-	[GetHashKey('ucspeedo')] = true, 
-	[GetHashKey('ucbuffalo')] = true, 
-	[GetHashKey('ucprimo')] = true,
-	[GetHashKey('ucbanshee')] = true,
-	[GetHashKey('uccoquette')] = true,
-	[GetHashKey('polbronco')] = true,
-	[GetHashKey('uccomet')] = true, 
-	[GetHashKey('polm5')] = true,
-	[GetHashKey('polraptor')] = true, 	
-	[GetHashKey('npolchar')] = true,
-	[GetHashKey('npolexp')] = true,
-	[GetHashKey('npolstang')] = true,
-	[GetHashKey('npolchal')] = true,
-	[GetHashKey('npolvette')] = true,
-	[GetHashKey('npolvic')] = true,
-	[GetHashKey('npolmm')] = true,
-	[GetHashKey('poltrhawk')] = true,
-}
-
-local autoSceriffi = {
-    [GetHashKey('polriot')] = true, 
-	[GetHashKey('polbus')] = true,                     
-	[GetHashKey('polescalade')] = true,
-	[GetHashKey('ucfugitive')] = true,
-	[GetHashKey('ucballer')] = true, 
-	[GetHashKey('ucspeedo')] = true, 
-	[GetHashKey('ucbuffalo')] = true, 
-	[GetHashKey('ucprimo')] = true,
-	[GetHashKey('ucbanshee')] = true,
-	[GetHashKey('uccoquette')] = true,
-	[GetHashKey('polbronco')] = true,
-	[GetHashKey('uccomet')] = true, 
-	[GetHashKey('polm5')] = true,
-	[GetHashKey('polraptor')] = true, 	
-	[GetHashKey('npolchar')] = true,
-	[GetHashKey('npolexp')] = true,
-	[GetHashKey('npolstang')] = true,
-	[GetHashKey('npolchal')] = true,
-	[GetHashKey('npolvette')] = true,
-	[GetHashKey('npolvic')] = true,
-	[GetHashKey('npolmm')] = true,
-	[GetHashKey('poltrhawk')] = true,
-}
-
 
 
 
@@ -510,7 +460,7 @@ function OpenLSMenu(elems, menuName, menuTitle, parent)
 					end
 					currentKakka = currentKakka - 2
 					OpenLSMenu(eleme[currentKakka], menuNam[currentKakka], menuTitl[currentKakka], parente[currentKakka])
-					fdsdev.ShowNotification(GetLocale('already_own', data.current.label))
+					print(GetLocale('already_own', data.current.label))
 
 					-- qui
 					
